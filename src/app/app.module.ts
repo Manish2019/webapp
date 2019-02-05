@@ -3,22 +3,32 @@ import { NgModule } from '@angular/core';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 
 
+
 import { AppRoutingModule, routingComponets } from './app.routing.module';
 import { AppComponent } from './app.component';
+import { NewsComponent } from './news/news.component';
+import { DataService } from './services/data.service';
+
 // import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     routingComponets,
-    // CarouselComponent
+    NewsComponent
+
   ],
   imports: [
     BrowserModule,
     Ng2CarouselamosModule,
     AppRoutingModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+
+  bootstrap: [AppComponent],
+
+  providers: [DataService],
+
+
+
 })
 export class AppModule { }

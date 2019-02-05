@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-
+import { LoginComponent } from './login/login.component';
+import { NavbarComponent } from './navbar/navbar.component';
 import { CarouselComponent } from './carousel/carousel.component';
+
+
 
 const AppRouting: Routes = [
 
-{path:'carousel', component: CarouselComponent}
+{path: 'login', component: LoginComponent},
+{path:'', component: CarouselComponent}
     
 ]
 
@@ -19,4 +23,4 @@ const AppRouting: Routes = [
 
 export class AppRoutingModule { }
 
-export const routingComponets = [ CarouselComponent]
+export const routingComponets = [ CarouselComponent, LoginComponent, NavbarComponent ]
