@@ -1,3 +1,9 @@
-<p>
-  news works!
-</p>
+<ul>
+  <li *ngFor = 'let disdata of displaydata'>
+  <p>{{disdata.userId}}</p>
+  <p>{{disdata.id}}</p>
+  <p>{{disdata.title}}</p>
+   <p>{{disdata.body}}</p>
+   
+  </li>
+</ul>
