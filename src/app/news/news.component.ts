@@ -11,12 +11,11 @@ export class NewsComponent implements OnInit {
 
   constructor(private dataservice: DataService) { }
 
-  private displaydata:Array<any> = [];
+  private displaydata: Array<any> = [];
+
 
   ngOnInit() {
-
-    this.dataservice.getData().subscribe(data => this.displaydata = data)
-
+    this.dataservice.getData().subscribe(data => this.displaydata = data);
   }
 
 }

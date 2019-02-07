@@ -1,2 +1,11 @@
-pvrcinemas.wemonde.com/PVRCinemasCMS/api/content/nowshowing@RequestParam String city, @RequestParam String av, @RequestParam String pt,
+pvrcinemas.wemonde.com/PVRCinemasCMS/api/content/nowshowing
+
+@RequestParam String city, @RequestParam String av, @RequestParam String pt,
    @RequestParam String did, @RequestParam(required = false, defaultValue = "0") long userid
+
+
+      city: city,
+      av: "1.0",
+      pt: "WEBSITE",
+      did: "bf7df676350d65b6",
+      userid: "0"

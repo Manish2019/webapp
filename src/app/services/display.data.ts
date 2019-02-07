@@ -1,7 +1,6 @@
 export interface DisplayData{
-    userId: number,
-    id: number,
-    title: string,
-    body: string,
-    
+    // wrapperType:string;
+    // artistType:string;
+    // artistName:string;
+    // artistLinkUrl:string;
 }
