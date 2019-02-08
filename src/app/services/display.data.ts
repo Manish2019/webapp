@@ -3,4 +3,7 @@ export interface DisplayData{
     // artistType:string;
     // artistName:string;
     // artistLinkUrl:string;
+
+    // Post Method
+   // data: Array<any>;
 }

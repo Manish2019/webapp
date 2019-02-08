@@ -5,15 +5,15 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule, routingComponets } from './app.routing.module';
 import { AppComponent } from './app.component';
-import { NewsComponent } from './news/news.component';
 import { DataService } from './services/data.service';
+import { PostService } from './services/post.service';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    routingComponets,
-    NewsComponent
+    routingComponets
 
   ],
   imports: [
@@ -25,7 +25,7 @@ import { DataService } from './services/data.service';
 
   bootstrap: [AppComponent],
 
-  providers: [DataService],
+  providers: [DataService, PostService],
 
 
 

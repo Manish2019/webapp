@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { NewsComponent } from './news/news.component';
+import { DisplayComponent } from './display/display.component';
 
 
 
@@ -12,7 +13,8 @@ const AppRouting: Routes = [
 
 {path: 'login', component: LoginComponent},
 {path:'', component: CarouselComponent},
-{path:'news', component: NewsComponent}
+{path:'news', component: NewsComponent},
+{path:'display', component: DisplayComponent}
     
 ]
 
@@ -25,4 +27,4 @@ const AppRouting: Routes = [
 
 export class AppRoutingModule { }
 
-export const routingComponets = [ CarouselComponent, LoginComponent, NavbarComponent, NewsComponent ]
+export const routingComponets = [ DisplayComponent, CarouselComponent, LoginComponent, NavbarComponent, NewsComponent ]
