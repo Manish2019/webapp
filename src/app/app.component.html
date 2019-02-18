@@ -1,2 +1,4 @@
 <div app-navbar></div>
+<app-news (childEvent)="message=$event" [prentData]="name"></app-news>
+<h2>{{message}}</h2>
 <router-outlet></router-outlet>

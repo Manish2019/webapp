@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -20,7 +21,9 @@ import { PostService } from './services/post.service';
     BrowserModule,
     Ng2CarouselamosModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
 
   bootstrap: [AppComponent],

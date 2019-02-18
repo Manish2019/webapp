@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { DataService } from '../services/data.service';
 
 
@@ -13,9 +13,14 @@ export class NewsComponent implements OnInit {
 
   private displaydata: Array<any> = [];
 
+  @Input('prentData') public name;
+  @Output() public childEvent = new EventEmitter();
 
   ngOnInit() {
     this.dataservice.getData().subscribe(data => this.displaydata = data);
   }
 
+  fire(){
+    this.childEvent.emit('Hello Wemonde!');
+  }
 }
