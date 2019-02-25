@@ -8,7 +8,6 @@ import { NewsComponent } from './news/news.component';
 import { DisplayComponent } from './display/display.component';
 
 
-
 const AppRouting: Routes = [
 
 {path: 'login', component: LoginComponent},
@@ -27,4 +26,5 @@ const AppRouting: Routes = [
 
 export class AppRoutingModule { }
 
+//component bind class
 export const routingComponets = [ DisplayComponent, CarouselComponent, LoginComponent, NavbarComponent, NewsComponent ]
